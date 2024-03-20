@@ -145,6 +145,59 @@ fun school(word:String){
 }
 
 
+//20th March 2024
+//Arrays
+
+fun main() {
+//Question 1
+    println (response("Gloria"))
+
+//Question 2
+// Write a Kotlin program  that sorts an array of students names in ascending order.
+    var names= arrayOf("Gloria", "Nyaga","Grace","Wairimu","Prince","Malonza","Brenda","Ana")
+    names = names.sortedArrayDescending()
+    println(names.contentToString())
+
+    //Question 3
+// In the names provided above. Since classes were reshuffled replace the value of the name Grace with Patience.
+    var studentNames= arrayOf("Gloria", "Nyaga","Grace","Wairimu","Prince","Malonza","Brenda","Ana")
+    studentNames.set(2,"Patience")
+    println(studentNames.contentToString())
+
+    //Question 4
+    //In the names provided a few students left the class and no one was there to replace them. Kindly indicate the name of  the remaining students.
+    var firstNames: Array<String?> = arrayOf("Gloria", "Nyaga","Grace","Wairimu","Prince","Malonza","Brenda","Ana")
+    firstNames[4]=null
+    println(firstNames.contentToString())
+
+//Question 5
+    //find the average
+    val numeric = arrayOf(23,567,43,213,56,6,7788,4,332)
+    println(numeric.sum()/numeric.average())
+
+    //find the minimum  value
+    val digits = arrayOf(23,567,43,213,56,6,7788,4,332)
+    println(digits.minOrNull())
+
+    //find the sum
+    val numbers = arrayOf(23,567,43,213,56,6,7788,4,332)
+    println(numbers.sum())
+
+}
+
+//Question 1
+//Write a function that takes a person's name as an argument and prints out a greeting message with the name. The function should return the unit.
+
+fun response(name:String): String{
+    var Unit=("Hello,$name! Welcome to Akirachix.")
+    return Unit
+
+}
+
+
+
+
+
 
 
 
